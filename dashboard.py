@@ -14,7 +14,7 @@ st.set_page_config(layout="wide", page_title="Dashboard de Temperaturas IoT")
 # ========================
 @st.cache_resource
 def get_engine():
-    return create_engine('postgresql://postgres:postgres@localhost:5432/iot')
+    return create_engine('postgresql://postgres:postgres@localhost:5432/pipeline')
 
 engine = get_engine()
 
